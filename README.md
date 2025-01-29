@@ -5,6 +5,9 @@
 ## Usage
 ```bash
 weatherfetch
+```
+Output:
+```
 
       .--.
    .-(    ).
@@ -21,7 +24,7 @@ Wind speed: 3.70 m/s
 * A Tomorrow.io API key (see Setup below)
 
 ## Setup
-Get a Tomorrow.io API key[here](https://www.tomorrow.io/weather-api/)
+Get a Tomorrow.io API key [here](https://www.tomorrow.io/weather-api/)
 Put the api along with your coordinates in `config.go`:
 
 ```go
