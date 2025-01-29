@@ -18,7 +18,7 @@ Wind speed: 3.70 m/s
 
 ## Dependencies
 * A working Go environment
-* A Tomorrow.io API (see Setup below)
+* A Tomorrow.io API key (see Setup below)
 
 ## Setup
 Get a Tomorrow.io API key[here](https://www.tomorrow.io/weather-api/)
