@@ -7,7 +7,6 @@ import (
 	"log"
 	"math"
 	"net/http"
-	"os"
 	"strconv"
 	"time"
 )
@@ -79,8 +78,7 @@ func fetchData() (CurrentWeather, error) {
 		entryTime, err := time.Parse(time.RFC3339, hourly.Time)
 
 		if err != nil {
-			fmt.Printf("Error parsing time")
-			os.Exit(1)
+			log.Fatal("Error parsing time")
 		}
 
 		diff := entryTime.Sub(now).Abs()
@@ -149,7 +147,6 @@ func printAscii(weatherCode string) {
       •
       `
 		fmt.Print(unk)
-
 	case "1000", "1100":
 		clear := `
     \   /
@@ -191,6 +188,15 @@ func printAscii(weatherCode string) {
     *  *  *
     `
 		fmt.Print(snow)
+	case "7000", "7101", "7102":
+		icePellet := `
+      .-.
+     (   ).
+    (___(__)
+     |  |  |
+    |  |  |
+    `
+		fmt.Print(icePellet)
 	}
 }
 
