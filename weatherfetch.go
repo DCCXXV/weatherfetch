@@ -189,14 +189,14 @@ func printAscii(weatherCode string) {
     `
 		fmt.Print(snow)
 	case "7000", "7101", "7102":
-		icePellet := `
+		icePellets := `
       .-.
      (   ).
     (___(__)
      |  |  |
     |  |  |
     `
-		fmt.Print(icePellet)
+		fmt.Print(icePellets)
 	}
 }
 
